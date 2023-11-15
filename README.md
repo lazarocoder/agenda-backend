@@ -15,7 +15,7 @@ Certifique-se de ter as seguintes ferramentas instaladas em sua máquina:
 
 ## Como Executar
 
-Siga estas etapas para executar localmente o seu projeto:
+Siga as etapas para executar localmente o seu projeto:
 
 4. Clone este repositório:
 
