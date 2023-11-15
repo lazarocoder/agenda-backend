@@ -22,11 +22,18 @@ Siga estas etapas para executar localmente o seu projeto:
 - [Bash]
 
 ```bash
-  git clone https://github.com/lazarocoder/desafio-tecnico-api.git
+  git clone https://github.com/lazarocoder/agenda-backend.git
 ```
 
 - Navegue até o diretório do projeto:
 
 ```bash
-    cd desafio-tecnico-api
+    cd agenda-backend
+```
+- [Maven]
+```bash
+2. mvn build
+3. mvn clean
+4. mvn install
+5. mvn spring-boot:run
 ```
