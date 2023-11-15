@@ -33,8 +33,8 @@ Siga as etapas para executar localmente o seu projeto:
 ```
 - [Maven]
 ```bash
-2. mvn build
-3. mvn clean
-4. mvn install
-5. mvn spring-boot:run
+1. mvn build
+2. mvn clean
+3. mvn install
+4. mvn spring-boot:run
 ```
