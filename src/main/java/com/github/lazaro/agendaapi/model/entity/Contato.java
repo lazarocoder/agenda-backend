@@ -1,29 +1,45 @@
 package com.github.lazaro.agendaapi.model.entity;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.github.lazaro.agendaapi.dto.ContatoRequest;
+import lombok.*;
 
 import javax.persistence.*;
+import java.util.List;
 
+@Getter
+@Setter
 @Entity
-@Data
+@Builder
 @NoArgsConstructor
+@AllArgsConstructor
 public class Contato {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Integer id;
+    private Long id;
 
-    @Column
+    @Column(nullable = false, length = 100)
     private String nome;
+
+    @Column(nullable = false, length = 100)
+    private String sobreNome;
+
+    @Column(nullable = false, unique = true, length = 11)
+    private String cpf;
 
     @Column
     private String email;
 
-    @Column
-    private Boolean favorito;
+    @OneToMany(mappedBy = "idContato", fetch = FetchType.LAZY, cascade = CascadeType.ALL)
+    private List<Endereco> endereco;
 
-    @Column
-    @Lob
-    private byte[] foto;
+    public static Contato parseContato(ContatoRequest contatoRequest) {
+        return Contato.builder()
+                .id(contatoRequest.getId())
+                .cpf(contatoRequest.getCpf())
+                .nome(contatoRequest.getNome())
+                .sobreNome(contatoRequest.getSobreNome())
+                .email(contatoRequest.getEmail()).build();
+    }
+
 }

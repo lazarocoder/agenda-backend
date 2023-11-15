@@ -1,0 +1,15 @@
+/*CREATE TABLE CONTATO
+(
+    ID                      integer,
+    NOME                    VARCHAR(100) NOT NULL,
+    SOBRE_NOME              VARCHAR(100) NOT NULL,
+    CPF                     VARCHAR(11)  NOT NULL UNIQUE,
+    EMAIL                   VARCHAR(255),
+    DATA_CRIACAO            timestamp with time zone,
+    DATA_ULTIMA_ATUALIZACAO TIMESTAMP WITH TIME ZONE
+);
+
+ALTER TABLE CONTATO
+    ADD CONSTRAINT CONTATO_ID_PK PRIMARY KEY (ID) ENABLE;
+CREATE SEQUENCE CONTATO_SEQ START WITH 1 NOCACHE;*/
+

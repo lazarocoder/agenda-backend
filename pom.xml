@@ -12,7 +12,7 @@
 	<artifactId>agenda-api</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>agenda-api</name>
-	<description>Aplicação de agenda curso Udemy</description>
+	<description>Aplicação de agenda</description>
 
 	<properties>
 		<java.version>11</java.version>
@@ -49,6 +49,16 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.hibernate.validator</groupId>
+			<artifactId>hibernate-validator</artifactId>
+			<version>6.1.6.Final</version>
+		</dependency>
+<!--		<dependency>-->
+<!--			<groupId>org.flywaydb</groupId>-->
+<!--			<artifactId>flyway-core</artifactId>-->
+<!--		</dependency>-->
+
 	</dependencies>
 
 	<build>
