@@ -1,4 +1,5 @@
 # Agenda-backend
+Bem-vindo ao Desafio Teste de nivel agenda! Este é um projeto desenvolvido em Spring Boot que apresenta [Uma api de gerenciamento de contatos].
 
 ## Pré-requisitos
 
@@ -25,7 +26,7 @@ Siga as etapas para executar localmente o seu projeto:
   git clone https://github.com/lazarocoder/agenda-backend.git
 ```
 
-- Navegue até o diretório do projeto:
+- [Navegue até o diretório do projeto]
 
 ```bash
     cd agenda-backend
